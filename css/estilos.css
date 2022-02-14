@@ -138,6 +138,22 @@ nav li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: "white";
+    margin-top: 25px;
+    animation-name: animacion1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+      }
+ @keyframes animacion1 {
+        
+        100% {
+          margin-top: 120px;
+          margin-bottom: 100px;
+        }
+      
 }
 
 
