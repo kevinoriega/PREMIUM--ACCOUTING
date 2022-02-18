@@ -112,6 +112,15 @@ iframe {
      height: 150px;
      object-fit: cover;
  }
+ th{
+     color: #bbb;
+ }
+ td{
+     color: aliceblue;
+ }
+ tr{
+     color: beige;
+ }
 
  .con{
      padding: 50px;
