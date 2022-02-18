@@ -10,7 +10,7 @@ body {
 
 h1 {
     color: rgb(157, 147, 248);
-    font-size: 80px;
+    font-size: 500 rem;
     font-family: 'Big Shoulders Stencil Display', cursive;
     ;
 }
@@ -22,52 +22,16 @@ h2 {
 }
 
 h3 {
-    color: rgb(24, 127, 134);
+    color: rgb(27, 70, 73);
     font-family: 'Big Shoulders Stencil Display';
 }
-th{
-    color: #bbb;
+h4{
+    color: rgb(156, 156, 142);
 }
-td{color: #bbb;}
-
-
-.sky {
-    width: 95vw;
-    height: 80vh;
-    background-color: rgb(49, 49, 73);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-gap: 1rem;
-    justify-content: center;
-    padding: 50px 25px;
-    border-radius: 30px;
-    background: #2f363e;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(194, 187, 187, 0.2),
-        inset -5px -5px 15px rgba(235, 222, 222, 0.75);
-    padding: 10px;
-
-    grid-template-areas: "imagen name"
-        "redes subname";
+h5{
+    color: #1e2227;
 }
 
-.name {
-    grid-area: name;
-    align-items: center;
-}
-
-.subname {
-    justify-self: auto;
-    grid-area: subname;
-
-}
-
-.redes {
-    grid-area: redes;
-}
 
 img>div {
     color: #fff;
@@ -84,53 +48,13 @@ img>div {
 
 header {
     display: flex;
-    background-color: rgb(2, 1, 12);
+    background-color: rgb(7, 7, 7);
     align-items: center;
-    padding: 20px;
-    justify-content: center;
-    border-radius: 50px;
-    width: 97vw;
-    height: 1vh;
-}
+    height: 100px;
+    padding: 20px; 
+    flex-wrap: wrap; 
+  }
 
-nav {
-    flex: 1 0 50px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-nav li {
-    list-style: none;
-}
-
-.menupri>li>a {
-    color: rgb(213, 210, 243);
-    font-family: roboto;
-    text-decoration: none;
-}
-
-.contabilidad {
-    position: relative;
-    font-size: 100px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 100px;
-}
-
-.contabilidad img {
-    border-radius: 20px;
-    background: #2f363e;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(209, 193, 193, 0.2),
-        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
-    padding: 5px;
-}
 
 .texto {
     position: absolute;
@@ -161,37 +85,48 @@ nav li {
     color: #2f363e;
 }
 
-legend {
-    color: #000000;
-}
 
-.seccion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(100, 102, 114);
-    border-radius: 50px;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(224, 218, 218, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(102, 101, 101, 0.75);
-    padding: 50px;
-}
+
 
 iframe {
-    border-radius: 40px;
+    height: 100 rem;
+    
+    
 }
 
 
 
-footer {
-    display: flex;
-    justify-content: flex-end;
+.carrusel {
+    height: 50vh;
+    object-fit: cover;
+}
+.carrusel2{
+    height: 70vh;
+    object-fit: cover;
 }
 
+.row{
+    padding: 50px;
+}
+ .im{
+     height: 150px;
+     object-fit: cover;
+ }
 
-
+ .con{
+     padding: 50px;
+     display: flex;
+     justify-content: space-around;
+ }
+ .gris{
+     color: #000000;
+ }
+ #fiscal , {
+     color: rgb(250, 248, 248);
+ }
+ #otras{
+     color: rgb(22, 13, 13);
+ }
 .areas {
     font-family: 'Lato', Arial, sans-serif;
     position: relative;
