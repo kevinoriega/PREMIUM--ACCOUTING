@@ -5,7 +5,13 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 body {
-    background-color: rgb(35, 34, 37);
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -15,6 +21,7 @@ h1 {
     ;
 }
 
+
 h2 {
     color: rgb(156, 156, 185);
     font-size: 35px;
@@ -22,27 +29,32 @@ h2 {
 }
 
 h3 {
-    color: rgb(27, 70, 73);
+    color: rgb(63, 109, 112);
     font-family: 'Big Shoulders Stencil Display';
+    font-size: 5rem;
 }
-h4{
-    color: rgb(156, 156, 142);
+
+h4:hover {
+    color: rgb(144, 138, 209);
+    font-size: 1.5rem;
+
+
 }
-h5{
+
+.card-text {
+    color: #7c8ca0;
+}
+
+.card-title {
+    color: rgb(250, 248, 248);
+}
+
+h5 {
     color: #1e2227;
 }
 
 
-img>div {
-    color: #fff;
-}
 
-.imagen {
-    width: 100%;
-    height: 100%;
-
-
-}
 
 
 
@@ -51,9 +63,9 @@ header {
     background-color: rgb(7, 7, 7);
     align-items: center;
     height: 100px;
-    padding: 20px; 
-    flex-wrap: wrap; 
-  }
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
 
 .texto {
@@ -75,8 +87,9 @@ header {
 }
 
 .objetivo {
-    color: rgb(59, 38, 59);
-    border-left: 5px solid rgb(37, 37, 37);
+    color: rgb(59, 58, 105);
+
+    font-size: 2rem;
 
 
 }
@@ -87,11 +100,9 @@ header {
 
 
 
+.gris {
+    color: #000000;
 
-iframe {
-    height: 100 rem;
-    
-    
 }
 
 
@@ -100,565 +111,85 @@ iframe {
     height: 50vh;
     object-fit: cover;
 }
-.carrusel2{
+
+.carrusel2 {
     height: 70vh;
     object-fit: cover;
 }
 
-.row{
+.row {
     padding: 50px;
 }
- .im{
-     height: 150px;
-     object-fit: cover;
- }
- th{
-     color: #bbb;
- }
- td{
-     color: aliceblue;
- }
- tr{
-     color: beige;
- }
 
- .con{
-     padding: 50px;
-     display: flex;
-     justify-content: space-around;
- }
- .gris{
-     color: #000000;
- }
- #fiscal , {
-     color: rgb(250, 248, 248);
- }
- #otras{
-     color: rgb(22, 13, 13);
- }
-.areas {
-    font-family: 'Lato', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 250px;
-    max-width: 310px;
-    width: 100%;
-    background-color: #000000;
-    color: #ffffff;
-    text-align: left;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+.im {
+    height: 150px;
+    object-fit: cover;
 }
 
-.areas * {
-    -webkit-transition: all 0.35s;
-    transition: all 0.05s;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-.areas img {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-.areas figcaption {
-    position: absolute;
-    height: 75px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    overflow: hidden;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.areas h3 {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 3px 0;
-}
-
-.areas h5 {
-    font-weight: 400;
-    margin: 0;
-    text-transform: uppercase;
+th {
     color: #bbb;
-    letter-spacing: 1px;
 }
 
-.areas blockquote {
-    padding: 0;
-    margin: 0;
-    font-style: italic;
-    font-size: 1em;
+td {
+    color: aliceblue;
 }
 
-.areas a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.areas:hover figcaption,
-.areas.hover figcaption {
-    height: calc(85%);
-}
-
-.sky2 {
-    display: flex;
-    justify-content: space-between;
+tr {
+    color: beige;
 }
 
 
-/* -------------quienes somos-------------------- */
-.qs {
-    display: grid;
-    width: 90vw;
-    height: 70vh;
-    background-color: rgb(49, 49, 73);
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 3rem;
-    column-gap: 50px;
-    justify-content: center;
-    padding: 50px 50px;
-    grid-template-areas: "parrafo parrafo"
-        "mision vision";
-    border-radius: 50px;
-    background: #2f363e;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+.con {
     padding: 50px;
-}
-
-p {
-    color: rgb(211, 205, 205);
-    font-family: roboto;
-    font-size: 20px;
-
-}
-
-.parrafo {
-    grid-area: parrafo;
-}
-
-.mision {
-    grid-area: mision;
-}
-
-.grilla {
-    display: grid;
-    gap: 10rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: dense;
-}
-
-.grilla>div>img {
-    width: 100%;
-    height: 70%;
-    border-radius: 50px;
-    padding: 20px;
-
-}
-
-.pe {
-    border-left: 5px solid rgb(155, 148, 148);
-}
-
-/* ------------------servicios---------*/
-.servi {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 350px;
-    min-height: 50px;
-    border-radius: 30px;
-    background: #2f363e;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(209, 199, 199, 0.75);
-    padding: 50px;
-}
-
-.eleccion {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+    justify-content: space-around;
 
 }
 
-.eleccion span {
-    display: inline-block;
-    color: thistle;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.75em;
-    padding-left: 5px;
-    line-height: 1em;
-    font-family: 'Oswald';
+.gris {
+    color: #000000;
 }
 
-.eleccion box {
-    display: inline-flex;
+#fiscal, {
+    color: rgb(250, 248, 248);
 }
 
-.eleccion .box input {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 30px;
+#otras {
+    color: rgb(22, 13, 13);
 }
 
-.eleccion .box select {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-/*----------capacitacion--------------*/
 .capa {
-    display: flex;
-    justify-content: auto;
-    flex-direction: column;
-    align-items: center;
+    color: rgb(136, 132, 132);
 }
 
-.capacita {
 
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(209, 199, 199, 0.75);
-    padding: 10px;
-    margin: 100px;
-
-
-}
-
-/*-------------- contacto------------------------- */
-.vistas {
-    display: flex;
-    justify-content: center;
-
-}
-
-.formulario {
-    position: relative;
-    width: 350px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    background: #2f363e;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
-    padding: 50px;
-}
-
-.formulario legend {
-    color: #fff;
-    font-weight: 600;
-    font-size: 2em;
-    width: 100%;
+.tran:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid #FFF;
+    padding: 35px;
+    width: 300px;
+    height: 150px;
+    background: #917dcf;
     text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'Lato', Arial, sans-serif;
-    ;
+    transition: all 0.3s ease;
 
+
+    border-radius: 50%;
 }
 
-form {
-    position: relative;
-    width: 100%;
+.grande:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-.inputbox {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-
+.reducir:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(1);
+    transform: scale(0.8);
 }
 
-.inputbox span {
-    display: inline-block;
-    color: thistle;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.75em;
-    border-left: 5px solid #fff;
-    padding-left: 5px;
-    line-height: 1em;
-    font-family: 'Oswald';
-
-}
-
-.inputboxm span {
-    display: inline-block;
-    color: thistle;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 0.75em;
-    border-left: 5px solid #fff;
-    padding-left: 5px;
-    line-height: 8em;
-    font-family: 'Oswald';
-
-}
-
-.inputbox box {
-    display: inline-flex;
-
-}
-
-.inputbox .box input {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.inputbox .box select {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.inputboxm .boxm input {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 50px 20px;
-    border-radius: 30px;
-}
-
-.inputbox .BOTON {
-    display: inline-block;
-    color: rgb(68, 47, 100);
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.75em;
-    line-height: 5em;
-
-
-
-}
-
-.inputbox .BOTON input {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: rgb(38, 38, 70);
-}
-
-@media screen and (max-width: 768px) {
-
-
-
-    .sky {
-        grid-template-columns: 1fr;
-        width: 640px;
-
-    }
-
-    .sky2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 600;
-
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    .header {
-        flex-direction: column;
-        padding: 0;
-
-
-    }
-
-    .navegacion {
-        height: 200px;
-    }
-
-    .menupri {
-        flex-direction: column;
-
-    }
-
-
-    .contabilidad {
-        width: 100%;
-        font-size: 50px;
-    }
-
-    .contabilidad img {
-        width: 500px;
-    }
-
-    .seccion {
-        flex-direction: column;
-    }
-
-    .obj {
-        width: 550px;
-    }
-
-    .qs {
-        display: grid;
-        width: 80vw;
-        height: 170vh;
-    }
-
-
-    .grilla {
-
-        gap: 5rem;
-
-    }
-
-    .servi {
-        width: 500px;
-    }
-
-
-}
-
-
-
-@media screen and (max-width: 425px) {
-
-    .sky {
-        width: 400px;
-        height: 800px;
-        flex-direction: column;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "name"
-            "imagen "
-            "redes "
-            "subname";
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-
-    .header {
-        flex-direction: column;
-
-    }
-
-    .menupri {
-        flex-direction: column;
-        height: 10vh;
-
-    }
-
-    .contabilidad {
-        width: 160%;
-        font-size: 50px;
-    }
-
-    .contabilidad img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .seccion {
-        flex-direction: column;
-        width: 210px;
-    }
-
-    .obj {
-        width: 300px;
-    }
-
-    .vid {
-        width: 300px;
-    }
-
-    .qs {
-        display: grid;
-        width: 70vw;
-        height: 270vh;
-    }
-
-
-    .grilla {
-        display: flex;
-        flex-direction: column;
-
-
-    }
-
-    .servi {
-        width: 160px;
-    }
-
-    .capacita {
-        display: grid;
-        width: 500px;
-        grid-auto-flow: dense;
-
-    }
-
-
-
+.redondo:hover {
+    border-radius: 15%;
 }
