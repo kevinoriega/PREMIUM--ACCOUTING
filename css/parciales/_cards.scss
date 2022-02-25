@@ -1,0 +1,43 @@
+
+.texto {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.obj {
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgb(188, 188, 247);
+
+
+}
+
+.objetivo {
+    color: rgb(59, 58, 105);
+    font-size: 2rem;
+} 
+.objetivo_meta {
+color: #2f363e;
+}
+
+
+.card-text {
+    color: #7c8ca0;
+}
+
+.card-title {
+    color: rgb(250, 248, 248);
+}
+.con {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+

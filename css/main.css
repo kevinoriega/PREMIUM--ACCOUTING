@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+body {
+  background: #141E30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
+  background: linear-gradient(to right, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  color: #9d93f8;
+  font-size: 500 rem;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+h2 {
+  color: #9c9cb9;
+  font-size: 35px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+h3 {
+  color: #3f6d70;
+  font-family: 'Big Shoulders Stencil Display';
+  font-size: 5rem;
+}
+
+h4:hover {
+  color: #908ad1;
+  font-size: 1.5rem;
+}
+
+h5 {
+  color: #1e2227;
+}
+
+.gris {
+  color: #000000;
+}
+
+.carrusel {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carrusel2 {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row {
+  padding: 50px;
+}
+
+.im {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+th {
+  color: #bbb;
+}
+
+td {
+  color: aliceblue;
+}
+
+tr {
+  color: beige;
+}
+
+.con {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gris {
+  color: #000000;
+}
+
+#fiscal {
+  color: #faf8f8;
+}
+
+#otras {
+  color: #160d0d;
+}
+
+.capa {
+  color: #888484;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #070707;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.obj {
+  width: 40%;
+  border-radius: 20px;
+  background-color: #bcbcf7;
+}
+
+.objetivo {
+  color: #3b3a69;
+  font-size: 2rem;
+}
+
+.objetivo_meta {
+  color: #2f363e;
+}
+
+.card-text {
+  color: #7c8ca0;
+}
+
+.card-title {
+  color: #faf8f8;
+}
+
+.con {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tran:hover {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid #FFF;
+  padding: 35px;
+  width: 300px;
+  height: 150px;
+  background: #917dcf;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.grande:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.reducir:hover {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.redondo:hover {
+  border-radius: 15%;
+}
+/*# sourceMappingURL=main.css.map */

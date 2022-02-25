@@ -1,0 +1,28 @@
+.tran:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid #FFF;
+    padding: 35px;
+    width: 300px;
+    height: 150px;
+    background: #917dcf;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.grande:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.reducir:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(1);
+    transform: scale(0.8);
+}
+
+.redondo:hover {
+    border-radius: 15%;
+}

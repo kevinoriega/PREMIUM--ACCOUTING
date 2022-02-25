@@ -3,15 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
 body {
-    background: #141E30;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #243B55, #141E30);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #243B55, #141E30);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 h1 {
@@ -37,8 +33,6 @@ h3 {
 h4:hover {
     color: rgb(144, 138, 209);
     font-size: 1.5rem;
-
-
 }
 
 .card-text {
@@ -55,9 +49,6 @@ h5 {
 
 
 
-
-
-
 header {
     display: flex;
     background-color: rgb(7, 7, 7);
@@ -70,7 +61,6 @@ header {
 
 .texto {
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -88,11 +78,8 @@ header {
 
 .objetivo {
     color: rgb(59, 58, 105);
-
-    font-size: 2rem;
-
-
-}
+     font-size: 2rem;
+    }
 
 .metas {
     color: #2f363e;
@@ -150,7 +137,7 @@ tr {
     color: #000000;
 }
 
-#fiscal, {
+#fiscal {
     color: rgb(250, 248, 248);
 }
 
@@ -173,8 +160,6 @@ tr {
     background: #917dcf;
     text-align: center;
     transition: all 0.3s ease;
-
-
     border-radius: 50%;
 }
 

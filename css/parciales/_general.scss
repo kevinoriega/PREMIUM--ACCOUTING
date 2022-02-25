@@ -1,0 +1,97 @@
+
+body {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+    color: rgb(157, 147, 248);
+    font-size: 500 rem;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    ;
+}
+
+
+h2 {
+    color: rgb(156, 156, 185);
+    font-size: 35px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+h3 {
+    color: rgb(63, 109, 112);
+    font-family: 'Big Shoulders Stencil Display';
+    font-size: 5rem;
+}
+
+h4:hover {
+    color: rgb(144, 138, 209);
+    font-size: 1.5rem;
+
+
+}
+h5 {
+    color: #1e2227;
+}
+
+.gris {
+    color: #000000;
+
+}
+.carrusel {
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+.carrusel2 {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.row {
+    padding: 50px;
+}
+
+.im {
+    height: 150px;
+    object-fit: cover;
+}
+th {
+    color: #bbb;
+}
+
+td {
+    color: aliceblue;
+}
+
+tr {
+    color: beige;
+}
+.con {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.gris {
+    color: #000000;
+}
+
+#fiscal{
+    color: rgb(250, 248, 248);
+}
+
+#otras {
+    color: rgb(22, 13, 13);
+}
+
+.capa {
+    color: rgb(136, 132, 132);
+}
