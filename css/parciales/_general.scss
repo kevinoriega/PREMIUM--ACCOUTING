@@ -9,34 +9,45 @@ body {
 
 }
 
-h1 {
-    color: rgb(157, 147, 248);
-    font-size: 500 rem;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    ;
+$estilos:(
+    color:rgb(156, 156, 185),
+    fuente1:'Big Shoulders Stencil Display',
+    fuente2:'roboto',
+    colortabla:aliceblue,
+
+);
+
+h1{color:  map-get($estilos, color );
+    font-size: 4.5rem;
+    font-family: map-get($estilos, fuente1);
+
 }
 
-
-h2 {
-    color: rgb(156, 156, 185);
-    font-size: 35px;
-    font-family: 'Lato', Arial, sans-serif;
+h2 {color: rgb(63, 109, 112);
+    font-family: map-get($estilos, fuente2 );
+    font-size: 3rem;
+    
 }
 
-h3 {
-    color: rgb(63, 109, 112);
-    font-family: 'Big Shoulders Stencil Display';
-    font-size: 5rem;
+h3 {color: rgb(63, 109, 112);
+    font-family: map-get($estilos, fuente2 );
+    font-size: 2rem;
+    
 }
 
-h4:hover {
+h4 {
+    color: #1e2227;
+    
+}
+em{
+    font-size: 1.5rem;
+}
+.art:hover{
     color: rgb(144, 138, 209);
     font-size: 1.5rem;
-
-
 }
-h5 {
-    color: #1e2227;
+li{
+    padding: 1rem;
 }
 
 .gris {
@@ -62,22 +73,29 @@ h5 {
     height: 150px;
     object-fit: cover;
 }
+
+
 th {
-    color: #bbb;
+    color: map-get($estilos, colortabla);   
 }
-
 td {
-    color: aliceblue;
+    color: map-get($estilos, colortabla);
 }
 
-tr {
-    color: beige;
+    tr {
+    color: map-get($estilos, colortabla);
 }
+
 .con {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 
+}
+.cont{
+    
+    @extend .con;
+    color: aliceblue;
 }
 
 .gris {
@@ -95,3 +113,17 @@ tr {
 .capa {
     color: rgb(136, 132, 132);
 }
+
+@mixin botones {
+     display: flex;
+     justify-content: center;
+     align-items: center;   
+}
+.boton{
+     @include botones
+ }
+
+ .boton2{
+     @extend .boton
+ }
+ 
