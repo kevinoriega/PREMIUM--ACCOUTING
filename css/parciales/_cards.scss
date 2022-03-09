@@ -18,11 +18,17 @@
 }
 
 .objetivo {
-    color: rgb(59, 58, 105);
+    color: rgb(88, 87, 153);
     font-size: 2rem;
 } 
-.objetivo_meta {
-color: #2f363e;
+.objetivo_metas{
+ background-color: rgb(102, 94, 84);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color:map-get($estilos, colortabla);
+ width: 50rem;
+ font-size: map-get($estilos, fuente1);
 }
 
 

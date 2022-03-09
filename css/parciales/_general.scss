@@ -23,7 +23,7 @@ h1{color:  map-get($estilos, color );
 
 }
 
-h2 {color: rgb(63, 109, 112);
+h2 {color: rgb(31, 53, 54);
     font-family: map-get($estilos, fuente2 );
     font-size: 3rem;
     
@@ -114,6 +114,38 @@ td {
     color: rgb(136, 132, 132);
 }
 
+
+.botonform {
+    font-size:17px;
+    font-family:Verdana;
+    width:90px;
+    height:41px;
+    border-width:3px;
+    color:rgb(71, 68, 68);
+    border-color:rgba(14, 197, 17, 1);
+    font-weight:bold;
+    border-top-left-radius:16px;
+    border-top-right-radius:16px;
+    border-bottom-left-radius:16px;
+    border-bottom-right-radius:16px;
+    box-shadow: 4px 4px 0px 0px rgba(136, 230, 134, 1);
+    text-shadow: 0px 1px 0px #528ecc;
+    background:linear-gradient(rgba(193, 241, 198, 1), rgba(55, 229, 58, 1));
+  }
+  
+.botonform:hover {
+    background: linear-gradient(rgb(4, 240, 8), rgba(193, 241, 198, 1));
+  }
+
+.botonform2{
+    background:linear-gradient(rgba(193, 241, 198, 1), rgb(229, 55, 84));
+    border-color:rgb(240, 81, 81);
+    box-shadow: 4px 4px 0px 0px rgb(247, 159, 163);
+    @extend .botonform
+}
+.botonform2:hover {
+    background: linear-gradient(rgb(238, 4, 4), rgba(193, 241, 198, 1));
+  }               
 @mixin botones {
      display: flex;
      justify-content: center;
@@ -124,6 +156,15 @@ td {
  }
 
  .boton2{
-     @extend .boton
+     @extend .boton;
+     
  }
  
+ 
+ 
+textarea {
+    resize: none;
+}
+
+
+

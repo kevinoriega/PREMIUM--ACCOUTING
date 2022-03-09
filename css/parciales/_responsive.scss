@@ -1,3 +1,15 @@
+@media (max-width:992px){
+    li{
+        padding: 0rem;
+    }
+    .objetivo_metas{
+        width: 20rem;
+        height: 30rem;
+       
+    }
+}
+
+
 @media (max-width:768px) {
     .con{
         font-size: 3rem;  
@@ -11,6 +23,15 @@
     }
     
 }
+@media (max-width:450px){
+ .objetivo_metas{
+    width: 10rem;
+    height: 30rem;
+    font-size: 0.8rem;
+    
+
+}
+}
 @media (max-width:320px){
     th{
         font-size: 0.5rem;
@@ -19,11 +40,8 @@
         font-size: 0.5rem;
     }
     
+    
 
 }
-@media (max-width:992px){
-    li{
-        padding: 0rem;
-    }
-}
+
     
