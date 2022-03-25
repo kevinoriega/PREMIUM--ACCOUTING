@@ -29,14 +29,16 @@ h2 {color: rgb(31, 53, 54);
     
 }
 
-h3 {color: rgb(63, 109, 112);
+h3 {color: rgb(192, 240, 243);
     font-family: map-get($estilos, fuente2 );
-    font-size: 2rem;
+    font-size: 2.5rem;
     
 }
 
 h4 {
+    font-family: 'Lato';
     color: #1e2227;
+    font-size: 1.5 rem;
     
 }
 em{
@@ -45,9 +47,20 @@ em{
 .art:hover{
     color: rgb(144, 138, 209);
     font-size: 1.5rem;
+    -webkit-box-shadow: 0px 0px 10px 1px #075F91;
+  -moz-box-shadow:    0px 0px 10px 1px #075F91;
+  box-shadow:         0px 0px 10px 1px #075F91;
 }
 li{
     padding: 1rem;
+}
+.log{
+    width: 350px;
+}
+.log:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px #075F91;
+  -moz-box-shadow:    0px 0px 10px 1px #075F91;
+  box-shadow:         0px 0px 10px 1px #075F91;
 }
 
 .gris {
@@ -117,34 +130,34 @@ td {
 
 .botonform {
     font-size:17px;
-    font-family:Verdana;
+    font-family:roboto;
     width:90px;
     height:41px;
     border-width:3px;
     color:rgb(71, 68, 68);
-    border-color:rgba(14, 197, 17, 1);
+    border-color:rgb(27, 5, 80);
     font-weight:bold;
-    border-top-left-radius:16px;
-    border-top-right-radius:16px;
-    border-bottom-left-radius:16px;
-    border-bottom-right-radius:16px;
-    box-shadow: 4px 4px 0px 0px rgba(136, 230, 134, 1);
+    border-top-left-radius:6px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:8px;
+    box-shadow: 4px 4px 0px 0px rgb(90, 68, 117);
     text-shadow: 0px 1px 0px #528ecc;
-    background:linear-gradient(rgba(193, 241, 198, 1), rgba(55, 229, 58, 1));
+    background:linear-gradient(rgba(193, 241, 198, 1), rgb(51, 38, 124));
   }
   
 .botonform:hover {
-    background: linear-gradient(rgb(4, 240, 8), rgba(193, 241, 198, 1));
+    background: linear-gradient(rgb(108, 97, 138), rgba(193, 241, 198, 1));
   }
 
 .botonform2{
-    background:linear-gradient(rgba(193, 241, 198, 1), rgb(229, 55, 84));
-    border-color:rgb(240, 81, 81);
-    box-shadow: 4px 4px 0px 0px rgb(247, 159, 163);
+    background:linear-gradient(rgb(80, 71, 133), rgb(220, 218, 238));
+    border-color:rgb(27, 5, 80);
+    box-shadow: 4px 4px 0px 0px rgb(178, 159, 247);
     @extend .botonform
 }
 .botonform2:hover {
-    background: linear-gradient(rgb(238, 4, 4), rgba(193, 241, 198, 1));
+    background: linear-gradient(rgb(230, 225, 225), rgb(108, 97, 138));
   }               
 @mixin botones {
      display: flex;
@@ -159,6 +172,58 @@ td {
      @extend .boton;
      
  }
+ .btn-vert {
+    color: #63B1D0;
+    text-decoration: none;
+    margin: 5px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s ease all;
+  }
+  
+ 
+  
+  .botong
+  {display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 1s;
+    overflow: hidden;
+  }
+  .botong:after{
+    content: ""; 
+      position: absolute;
+      height: 40px;
+      left: -300px;
+      top: 0%;
+      width: 500px;
+    z-index: -1;
+      -webkit-transition: all 0.75s ease 0s;
+      -moz-transition: all 0.75s ease 0s;
+      -o-transition: all 0.75s ease 0s;
+      transition: all 0.75s ease 0s;
+    background: linear-gradient(135deg,#bcb8da 0%, #5d6bec 50%,#a5a4a7 50%, #ba9bcc 100%);
+  }
+  .botong:hover:after
+  {
+    left: 0px;
+    opacity: 1;
+  }
+  .botong:hover
+  {
+    -webkit-box-shadow: 0px 0px 10px 1px #075F91;
+  -moz-box-shadow:    0px 0px 10px 1px #075F91;
+  box-shadow:         0px 0px 10px 1px #075F91;
+  }
+    
  
  
  
@@ -166,5 +231,37 @@ textarea {
     resize: none;
 }
 
+.footer-section {
+    background: #151414;
+    position: relative;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
 
 
