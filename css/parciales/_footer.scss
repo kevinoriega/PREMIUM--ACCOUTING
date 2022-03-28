@@ -27,9 +27,7 @@
     vertical-align: -0.200em;
   }
   
-  .rounded-social-buttons {
-    text-align: center;
-  }
+  
   
   .rounded-social-buttons .social-button {
     display: inline-block;
@@ -110,4 +108,33 @@
     background: #fefefe;
     border-color: #125688;
   }
-  
+  .footer-section {
+    background: #151414;
+    position: relative;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }

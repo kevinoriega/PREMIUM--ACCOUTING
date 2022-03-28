@@ -18,7 +18,7 @@ $estilos:(
 );
 
 h1{color:  map-get($estilos, color );
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     font-family: map-get($estilos, fuente1);
 
 }
@@ -95,7 +95,7 @@ td {
     color: map-get($estilos, colortabla);
 }
 
-    tr {
+ tr {
     color: map-get($estilos, colortabla);
 }
 
@@ -142,12 +142,12 @@ td {
     border-bottom-left-radius:6px;
     border-bottom-right-radius:8px;
     box-shadow: 4px 4px 0px 0px rgb(90, 68, 117);
-    text-shadow: 0px 1px 0px #528ecc;
-    background:linear-gradient(rgba(193, 241, 198, 1), rgb(51, 38, 124));
+    text-shadow: 0px 1px 0px #524d68;
+    background:linear-gradient(rgba(193, 241, 198, 1), rgb(124, 94, 207));
   }
   
 .botonform:hover {
-    background: linear-gradient(rgb(108, 97, 138), rgba(193, 241, 198, 1));
+    background: linear-gradient(rgb(124, 94, 207), rgba(193, 241, 198, 1));
   }
 
 .botonform2{
@@ -162,7 +162,8 @@ td {
 @mixin botones {
      display: flex;
      justify-content: center;
-     align-items: center;   
+     align-items: center;
+      
 }
 .boton{
      @include botones
@@ -183,47 +184,51 @@ td {
  
   
   .botong
-  {display: flex;
-    align-items: center;
-    justify-content: center;
+  {@include botones;
     position: relative;
     display: block;
     height: 50px;
-    width: 150px;
+    width: 130px;
     border: none;
-    background-color: rgba(0,0,0,0);
+    background-color: #312f35;
+    color: white;
+    font-size: 1,2rem;
+    font-weight: bold;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+ 
+ 
+  .botong:hover
+  {
+  box-shadow:         0px 0px 10px 1px #9fc4e9;
+  }
+
+  .botong2{
+      @include botones;
+      background-color:#141E30;
+      height: 30px;
+      width: 50%;
+      position: relative;
+    display: block;
+    border: none;
+    background-color: #312f35;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    transition: 1s;
+    transition: 0.25s;
     overflow: hidden;
   }
-  .botong:after{
-    content: ""; 
-      position: absolute;
-      height: 40px;
-      left: -300px;
-      top: 0%;
-      width: 500px;
-    z-index: -1;
-      -webkit-transition: all 0.75s ease 0s;
-      -moz-transition: all 0.75s ease 0s;
-      -o-transition: all 0.75s ease 0s;
-      transition: all 0.75s ease 0s;
-    background: linear-gradient(135deg,#bcb8da 0%, #5d6bec 50%,#a5a4a7 50%, #ba9bcc 100%);
-  }
-  .botong:hover:after
-  {
-    left: 0px;
-    opacity: 1;
-  }
-  .botong:hover
-  {
-    -webkit-box-shadow: 0px 0px 10px 1px #075F91;
-  -moz-box-shadow:    0px 0px 10px 1px #075F91;
-  box-shadow:         0px 0px 10px 1px #075F91;
+  .botong2:hover{
+    box-shadow:         0px 0px 10px 1px #9fc4e9;
+
   }
     
+  .botong3{
+      @extend .botong;
+      border-radius: 8%;
+      border-bottom: #4667a5;
+  }
  
  
  
@@ -231,37 +236,46 @@ textarea {
     resize: none;
 }
 
-.footer-section {
-    background: #151414;
-    position: relative;
+
+.contac{
+    background-color: #d6cef5;
+
   }
-  .footer-cta {
-    border-bottom: 1px solid #373636;
-  }
-  .single-cta i {
-    font-size: 30px;
-    float: left;
-    margin-top: 8px;
-  }
-  .cta-text {
-    padding-left: 15px;
-    display: inline-block;
-  }
-  .cta-text h4 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
-  .cta-text span {
-    color: #757575;
-    font-size: 15px;
-  }
-  .footer-content {
-    position: relative;
-    z-index: 2;
+.colorletra{
+    
+    font-family:'roboto';
   }
   
-  
+.tit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.suave:hover{
+  background-color: #5d6bec;
+  color: #000000;
+}
+.fuerte:hover{
+  background-color: #dce3f0;
+  color: #c9baf0;
+  width: 1290px;
+  margin: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+.tarjeta{
+    box-sizing: content-box;
+}
+.pa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1 rem;
+  margin: 50px;
+}
+.aviso{
+    @extend .objetivo_metas
+}
+
 
 

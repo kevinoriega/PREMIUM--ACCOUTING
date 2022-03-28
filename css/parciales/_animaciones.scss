@@ -1,21 +1,11 @@
-.tran:hover {
-    display: inline-block;
-    box-sizing: border-box;
-    border: 5px solid #FFF;
-    padding: 35px;
-    width: 300px;
-    height: 150px;
-    background: #917dcf;
-    text-align: center;
-    transition: all 0.3s ease;
-    border-radius: 50%;
-}
+
 
 .grande:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.2);
     transform: scale(1.1);
 }
+
 
 .reducir:hover {
     -webkit-transform: scale(0.8);
@@ -26,3 +16,23 @@
 .redondo:hover {
     border-radius: 15%;
 }
+.whatsap {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#31dfc8;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    cursor:alias;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+
+  }
+  

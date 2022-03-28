@@ -64,18 +64,21 @@
 	margin-top: 50px;
 	margin-bottom: 20px;
 	display: block;
+	
 }
 
 .contenedor-cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	
 }
 
 .contenedor-cards .contenedor-card-item {
 	
-	width: 25%;
-	margin: 1%;
+	width: 20%;
+	margin: 5%;
+	height: 20%;
 	-webkit-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
@@ -83,12 +86,14 @@
 	cursor: help;
 }
 
+
 .contenedor-cards .contenedor-card-item:hover {
+	object-fit:cover;
 	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-	-webkit-transform: translateY(-10px);
-	-ms-transform: translateY(-10px);
-	-o-transform: translateY(-10px);
-	transform: translateY(-10px);
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-20px);
 }
 
 .contenedor-card-item-wrapper {
@@ -102,15 +107,15 @@
 	max-width: 100%;
 	position: relative;
 	top: 0;
-	-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-	border-radius: 5px;
+	-webkit-transition: all 0.3s cubic-bezier(0.500, 0.045, 0.355, 1);
+	transition: all 0.3s cubic-bezier(0.500, 0.045, 0.355, 1);
+	border-radius: 5px; 
 }
 
 .contenedor-card-item .contenedor-info {
 	position: absolute;
 	width: 100%;
-	height: 80px;
+	height: 100%;
 	bottom: -70px;
 	-webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -137,12 +142,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .contenedor-card-item .contenedor-info .info .titulo {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .contenedor-card-item .contenedor-info .info .categoria {
 	display: block;
-	font-size: 10px;
+	font-size: 0.9rem;
 }
 
 .contenedor-card-item:hover .contenedor-info {
@@ -151,9 +156,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .contenedor-card-item:hover img {
 	top: -30px;
-	-webkit-transform: rotate(-5deg) scale(2);
-	-ms-transform: rotate(-5deg) scale(2);
-	-o-transform: rotate(-5deg) scale(2);
+	-webkit-transform: rotate(-5deg) scale(1);
+	-ms-transform: rotate(-5deg) scale(1);
+	-o-transform: rotate(-5deg) scale(1);
 	transform: rotate(-5deg) scale(2);
 }
 
